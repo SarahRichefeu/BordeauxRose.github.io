@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
@@ -29,13 +29,14 @@ body {
     text-align: center;
 }
 
-.btn {
+.btn, .btn-calender {
     text-decoration: none;
     padding: 13px;
     font-family: verdana;
     font-size: 1.1em;
     color: #eeece1;
-    background-color: #d60094;
+    background-color: #d60064c4;
+    border: 0px solid #d60064c4;
     border-radius: 24px;
     -webkit-border-radius: 24px;
     -moz-border-radius: 24px;
@@ -46,10 +47,42 @@ body {
     }
     
     
-    .btn:hover {
+    .btn:hover, .btn-calender:hover {
     padding: 13px;
     font-size: 1em;
-    color: #d60094;
+    color: #d60064c4;
     background-color: #eeece1;
     border: 0px solid #FFFFFF;
     }
+
+/* Mise en page de la partie "Missions" */
+
+main {
+    margin: 1.2em;
+    text-align: justify;
+}
+
+h1, h2, .btn-calender {
+    margin: 10px 0px 20px 0px; 
+}
+
+.rose {
+    color: #eb3dbc;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.about {
+    margin-bottom: 3em;
+}
+
+.img-mission {
+    width: 90vw;
+}
+
+.donate {
+    position: absolute;
+    right: 20px;
+}
