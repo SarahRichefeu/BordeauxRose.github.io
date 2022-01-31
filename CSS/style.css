@@ -14,12 +14,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-
-
-.navbar-nav {
-    text-align: center;
-}
-
 .slogan-img {
     width: 55%;
     border-radius: 50%;
@@ -32,7 +26,7 @@ body {
 .btn, .btn-calender {
     text-decoration: none;
     padding: 13px;
-    font-family: verdana;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.1em;
     color: #eeece1;
     background-color: #d60064c4;
@@ -62,7 +56,7 @@ main {
     text-align: justify;
 }
 
-h1, h2, .btn-calender {
+h1, h2, .card {
     margin: 10px 0px 20px 0px; 
 }
 
@@ -82,7 +76,40 @@ h1, h2, .btn-calender {
     width: 90vw;
 }
 
-.donate {
-    position: absolute;
-    right: 20px;
+.btn-calender, .donate {
+    display: block;
+    margin: 15px auto 15px auto;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-events {
+    text-decoration: none;
+    padding: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    font-size: 1em;
+    color: #d60064c4;
+    background-color: #eeece1;
+    border: 0px solid #FFFFFF;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+    box-shadow: 3px 3px 8px #7f7f7f;
+    -webkit-box-shadow: 3px 3px 8px #7f7f7f;
+    -moz-box-shadow: 3px 3px 8px #7f7f7f;
+    transition: all 1s;
+    align-self: flex-end;
+}
+    .btn-events:hover {
+        font-size: 1.2em;
+        color: #d60064c4;
+    }
+
+.parcours {
+    text-decoration: none;
+    color: green;
 }
