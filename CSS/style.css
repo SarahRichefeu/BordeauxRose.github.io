@@ -149,3 +149,18 @@ footer {
     border-bottom: 2px solid white;
 }
 
+@media screen and (min-width: 576px) {
+    .slogan-img {
+        width: 200px;
+    }
+    
+    .img-mission {
+        width: 70vw;
+        position: relative;
+        left: 10%;
+    }
+
+    .card-img {
+        max-width: 400px;
+    }
+}
