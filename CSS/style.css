@@ -126,7 +126,7 @@ footer {
 
 
 .social-media {
-    width: 50vw;
+    width: 200px;
     padding: 15px;
     margin: auto;
     display: flex;
@@ -149,6 +149,8 @@ footer {
     border-bottom: 2px solid white;
 }
 
+/* Responsive en medium screen */
+
 @media screen and (min-width: 576px) {
     .slogan-img {
         width: 200px;
@@ -162,5 +164,46 @@ footer {
 
     .card-img {
         max-width: 400px;
+    }
+}
+
+/* Responsive en large screen */
+
+@media screen and (min-width: 991px) {
+    main {
+        width: 75vw;
+        margin: auto;
+    }
+
+    .img-mission {
+        width: 50vw;
+        position: relative;
+        left: 20%;
+}
+
+/* Responsive en extra-large screen */
+
+@media screen and (min-width: 1220px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+    }
+
+    .img-mission {
+        width: fit-content;
+        position: inherit;
+    }
+
+    .space {
+        margin-bottom: 120px;
+    }
+
+    .card {
+        margin-top: 40px;
+    }
+
+    .navbar-nav {
+        font-size: 1.2em;
     }
 }
