@@ -1,0 +1,217 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Mise en page de l'en-tête */
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-family: 'Raleway', sans-serif;
+}
+
+.slogan-img {
+    width: 55%;
+    border-radius: 50%;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.btn, .btn-calender {
+    text-decoration: none;
+    padding: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    color: #eeece1;
+    background-color: #d60064c4;
+    border: 0px solid #d60064c4;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    box-shadow: 3px 3px 12px #7f7f7f;
+    -webkit-box-shadow: 3px 3px 12px #7f7f7f;
+    -moz-box-shadow: 3px 3px 12px #7f7f7f;
+    transition: all 1s;
+    }
+    
+    
+    .btn:hover, .btn-calender:hover {
+    padding: 13px;
+    font-size: 1em;
+    color: #d60064c4;
+    background-color: #eeece1;
+    border: 0px solid #FFFFFF;
+    }
+
+/* Mise en page de la partie "Missions" */
+
+main {
+    margin: 1.2em;
+    text-align: justify;
+}
+
+h1, h2, .card {
+    margin: 10px 0px 20px 0px; 
+}
+
+.rose {
+    color: #eb3dbc;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+section {
+    margin: 3em 0 3em 0;
+}
+
+.img-mission {
+    width: 90vw;
+    margin-left:5%;
+}
+
+.btn-calender, .donate {
+    display: block;
+    margin: 2em auto 2em auto;
+    width: fit-content;
+}
+
+/* Mise en page de la partie Events */
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-events {
+    text-decoration: none;
+    padding: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    font-size: 1em;
+    color: #d60064c4;
+    background-color: #eeece1;
+    border: 0px solid #FFFFFF;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+    box-shadow: 3px 3px 8px #a7a7a7;
+    -webkit-box-shadow: 3px 3px 8px #a7a7a7;
+    -moz-box-shadow: 3px 3px 8px #a7a7a7;
+    transition: all 1s;
+    align-self: flex-end;
+}
+
+    .btn-events:hover {
+        font-size: 1.2em;
+        color: #d60064c4;
+    }
+
+.parcours {
+    text-decoration: none;
+    color: green;
+}
+
+/* Mise en page du footer */
+
+footer {
+    background: linear-gradient(to right, #ffa4d8, #feb7a4);
+    text-align: center;
+    font-size: 1.1em;
+}
+
+
+.social-media {
+    width: 200px;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: center;
+}
+
+.contacts {
+    padding-bottom: 15px;
+}
+
+.contacts a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 0 5px 0 5px;
+}
+
+.contacts a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Responsive en medium screen */
+
+@media screen and (min-width: 576px) {
+    .slogan-img {
+        width: 200px;
+    }
+    
+    .img-mission {
+        width: 70vw;
+        position: relative;
+        left: 10%;
+    }
+
+    .card-img {
+        max-width: 400px;
+    }
+}
+
+/* Responsive en large screen */
+
+@media screen and (min-width: 991px) {
+    main {
+        width: 75vw;
+        margin: auto;
+    }
+
+    .img-mission {
+        width: 50vw;
+        position: relative;
+        left: 20%;
+    }
+}
+
+/* Responsive en extra-large screen */
+
+@media screen and (min-width: 1220px) {
+    .slogan-img {
+        margin-left: 30px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+    }
+
+    .img-mission {
+        width: fit-content;
+        position: inherit;
+    }
+
+    .space {
+        margin-bottom: 4em;
+    }
+
+    .card {
+        margin-top: 40px;
+    }
+
+    .navbar-nav {
+        font-size: 1.2em;
+    }
+}
